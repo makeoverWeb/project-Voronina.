@@ -375,25 +375,25 @@ th {
   font-weight: normal;
   font-family: "SourceSerifPro-Semibold";
   font-style: normal;
-  src: url("../fonts/SourceSerifPro-Semibold.woff") format("woff"); }
+  src: url("../fonts/SourceSerifPro-Semibold.woff2") format("woff2"), url("../fonts/SourceSerifPro-Semibold.woff") format("woff"); }
 
 @font-face {
   font-weight: bold;
   font-family: "SourceSerifPro-Bold";
   font-style: normal;
-  src: url("../SourceSerifPro-Bold.woff") format("woff"); }
+  src: url("../fonts/SourceSerifPro-Bold.woff2") format("woff2"), url("../fonts/SourceSerifPro-Bold.woff") format("woff"); }
 
 @font-face {
   font-weight: normal;
   font-family: "SourceSerifPro-Regular";
   font-style: normal;
-  src: url("../SourceSerifPro-Regular.woff") format("woff"); }
+  src: url("../fonts/SourceSerifPro-Regular.woff2") format("woff2"), url("../fonts/SourceSerifPro-Regular.woff") format("woff"); }
 
 @font-face {
   font-weight: normal;
   font-family: "SourceSerifPro-Light";
   font-style: normal;
-  src: url("../SourceSerifPro-Light.woff") format("woff"); }
+  src: url("../fonts/SourceSerifPro-Light.woff2") format("woff2"), url("../fonts/SourceSerifPro-Light.woff") format("woff"); }
 
 body {
   min-width: 320px;

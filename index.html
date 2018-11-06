@@ -87,9 +87,10 @@
     </div>
   </header>
   <system.webServer>
-    <staticContent>
-       <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
-    </staticContent>
+   <staticContent>
+     <remove fileExtension=".woff"/>
+     <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
+   </staticContent>
   </system.webServer>
 <script < src="js/jquery-3.2.1.min.js"></script>
 <script src="js/script.js"></script>
