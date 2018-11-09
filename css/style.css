@@ -519,7 +519,6 @@ img {
 @media (min-width: 768px) {
   .page-header {
     max-width: 100%;
-    height: auto;
     background-image: none;
     display: -moz-flex;
     display: -ms-flex;
@@ -628,7 +627,7 @@ img {
     width: 50%;
     background-image: url(../img/header-bg__desktop--two.jpg);
     background-size: cover;
-    background-position: center; }
+    background-position: bottom; }
   .page-header__phone {
     margin-left: 20%;
     color: #747474; }
@@ -699,6 +698,9 @@ img {
   width: 90%;
   padding-bottom: 60px; }
 
+.portfolio__item--one {
+  margin-bottom: 40px; }
+
 .portfolio__hash {
   display: block;
   text-align: left;
@@ -730,19 +732,75 @@ img {
     margin-right: -10px;
     top: -60px; }
 
+.portfolio__detail {
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/portfolio-bg__s5--mobile-.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.portfolio__detail-wrap {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 20px; }
+
+.portfolio__caption {
+  font-family: "SourceSerifPro-Semibold";
+  font-size: 24px; }
+
+.portfolio__description {
+  font-family: "SourceSerifPro-Regular";
+  line-height: 20px;
+  font-weight: bold;
+  opacity: .9;
+  width: 80%; }
+
+.accent-point__wrap {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.portfolio__accent-point {
+  margin-right: 20px; }
+
 @media (min-width: 768px) {
   .portfolio {
     max-width: none;
     width: 100%;
     background-image: url("../img/page-main__bg--tablet.jpg");
     background-repeat: repeat-y;
-    background-position: center; }
+    background-position: center;
+    padding-top: 160px; }
   .portfolio__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: transparent; }
+  .portfolio__title {
+    margin-bottom: 80px; }
   .portfolio__column {
     width: 25%; }
   .portfolio__column--one {
@@ -750,8 +808,46 @@ img {
   .portfolio_column--two {
     margin-left: 20px;
     margin-right: 20px; }
-  .portfolio__item--one {
-    margin-bottom: 40px; } }
+  .portfolio__detail {
+    background-image: none;
+    background-color: #f8f8f8;
+    width: 80%;
+    height: 550px; }
+  .portfolio__detail-wrap {
+    background-image: url(../img/portfolio__leaf--5tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 105%;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .portfolio__about {
+    width: 50%; }
+  .portfolio__caption {
+    color: #1d1c1c; }
+  .portfolio__description {
+    color: #1d1c1c; }
+  .accent-point__wrap {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .portfolio__accent-point {
+    margin-right: 20px; } }
 
 @media (min-width: 1200px) {
   .portfolio {
@@ -763,12 +859,18 @@ img {
   .portfolio__pages {
     position: absolute;
     left: 100px;
-    top: 40%; } }
+    top: 40%; }
+  .portfolio__detail {
+    height: 700px; }
+  .portfolio__detail-wrap {
+    background-image: url(../img/portfolio__leaf--5desktop.png);
+    background-size: 100%; }
+  .portfolio__about {
+    width: 40%; } }
 
 .accent-point {
   display: block;
-  margin-right: auto;
-  width: 150px;
+  width: 160px;
   height: 25px;
   color: #fff;
   font-weight: bold;
@@ -781,8 +883,9 @@ img {
     width: 25px;
     height: 2px;
     background-color: #fff; }
-  .accent-point .pages {
-    display: none; }
+
+.pages {
+  display: none; }
 
 @media (min-width: 768px) {
   .accent-point {
